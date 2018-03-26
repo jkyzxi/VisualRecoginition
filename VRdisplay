@@ -1,0 +1,71 @@
+<html>
+<head>
+<base href="<%=basePath%>">
+
+<title>My JSP 'index.jsp' starting page</title>
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="This is my page">
+<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
+
+</head>
+
+<body>
+	<form>
+		<script language="javascript">
+	        curl -X POST --form "images_file=/Users/xizhang/Documents/IE directed study/fruitbowl.jpg"\
+	        "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classify?api_key=e1982193765f570e7702ac5c1f66178492d53d2e&version=2016-05-20"
+            {
+            "custom_classes": 0
+    "images":[
+    {
+      "classifiers": [
+        {
+          "classes": [
+            {
+              "class": "banana",
+              "score": 0.81,
+              "type_hierarchy": "/fruit/banana",
+            },
+            {
+              "class": "fruit",
+              "score": 0.922,
+            },
+            {
+              "class": "mango",
+              "score": 0.554,
+              "type_hierarchy": "/fruit/mango",
+            },
+            {
+              "class": "olive color",
+              "score": 0.951,
+            },
+            {
+              "class": "olive green color",
+              "score": 0.747,
+            }
+          ],
+          "classifier_id": "default",
+          "name": "default",
+        }
+      ],
+      "image": "fruitbowl.jpg",
+      }
+     ]
+      "images_processed":1
+   }
+     </script>
+   </form>
+
+	This is my JSP page.
+	<br>
+	<input type="file" id="myFile">
+	<p>Click the "Try it" button to disable the file upload button.</p>
+	<button onclick="myFunction()">Try it</button>
+</body>
+</html>
